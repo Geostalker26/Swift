@@ -14,6 +14,7 @@
 		102BAF241FE4DD8600E7DDD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 102BAF221FE4DD8600E7DDD0 /* LaunchScreen.storyboard */; };
 		102BAF2F1FE4DD8600E7DDD0 /* jediorsithTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102BAF2E1FE4DD8600E7DDD0 /* jediorsithTests.swift */; };
 		102BAF3A1FE4DD8600E7DDD0 /* jediorsithUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102BAF391FE4DD8600E7DDD0 /* jediorsithUITests.swift */; };
+		10F363A71FE78132000D9F3E /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F363A61FE78132000D9F3E /* colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		102BAF351FE4DD8600E7DDD0 /* jediorsithUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jediorsithUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		102BAF391FE4DD8600E7DDD0 /* jediorsithUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jediorsithUITests.swift; sourceTree = "<group>"; };
 		102BAF3B1FE4DD8600E7DDD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10F363A61FE78132000D9F3E /* colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				102BAF191FE4DD8600E7DDD0 /* AppDelegate.swift */,
 				102BAF1B1FE4DD8600E7DDD0 /* ViewController.swift */,
 				102BAF1D1FE4DD8600E7DDD0 /* Main.storyboard */,
+				10F363A61FE78132000D9F3E /* colors.swift */,
 				102BAF201FE4DD8600E7DDD0 /* Assets.xcassets */,
 				102BAF221FE4DD8600E7DDD0 /* LaunchScreen.storyboard */,
 				102BAF251FE4DD8600E7DDD0 /* Info.plist */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				102BAF1C1FE4DD8600E7DDD0 /* ViewController.swift in Sources */,
+				10F363A71FE78132000D9F3E /* colors.swift in Sources */,
 				102BAF1A1FE4DD8600E7DDD0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

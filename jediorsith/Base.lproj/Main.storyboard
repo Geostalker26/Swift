@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +14,112 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="jediorsith" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StarWarsTheLastJedi" translatesAutoresizingMaskIntoConstraints="NO" id="t7v-9W-Wn2">
+                                <rect key="frame" x="111.66666666666669" y="20" width="191" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="xih-Z4-VKb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jedi or Sith?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0VP-L3-VOz">
+                                <rect key="frame" x="89" y="161" width="236" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ray" translatesAutoresizingMaskIntoConstraints="NO" id="JTa-lP-80d">
+                                <rect key="frame" x="15" y="226" width="145" height="145"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="S8w-VD-gFh"/>
+                                    <constraint firstAttribute="height" constant="145" id="j7n-r6-ipu"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kylo_Ren_profile" translatesAutoresizingMaskIntoConstraints="NO" id="EMe-Ib-0Tr">
+                                <rect key="frame" x="254" y="226" width="145" height="145"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="145" id="0DR-gY-muc"/>
+                                    <constraint firstAttribute="height" constant="145" id="ej9-GJ-w2W"/>
+                                    <constraint firstAttribute="width" constant="145" id="tMa-dF-Tx2"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OjQ-Yf-Iho">
+                                <rect key="frame" x="15" y="379" width="35" height="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Jedi"/>
+                                <connections>
+                                    <action selector="raygood:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k2L-HF-XGU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tF7-aH-vEb">
+                                <rect key="frame" x="127" y="379" width="33" height="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Sith"/>
+                                <connections>
+                                    <action selector="raybad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AsO-pN-hsS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOH-0f-Scq">
+                                <rect key="frame" x="254" y="379" width="35" height="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Jedi"/>
+                                <connections>
+                                    <action selector="kylogood:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yVJ-PK-SDQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U59-F8-ieb">
+                                <rect key="frame" x="366" y="379" width="33" height="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Sith"/>
+                                <connections>
+                                    <action selector="kylobad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lsf-HX-s4b"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EMe-Ib-0Tr" secondAttribute="trailing" constant="15" id="3jQ-NK-twi"/>
+                            <constraint firstItem="t7v-9W-Wn2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5br-xR-SUE"/>
+                            <constraint firstItem="U59-F8-ieb" firstAttribute="leading" secondItem="WOH-0f-Scq" secondAttribute="trailing" constant="77" id="CCb-l2-X4y"/>
+                            <constraint firstItem="0VP-L3-VOz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CcW-WZ-wd3"/>
+                            <constraint firstItem="U59-F8-ieb" firstAttribute="trailing" secondItem="EMe-Ib-0Tr" secondAttribute="trailing" id="HDl-54-uaY"/>
+                            <constraint firstItem="WOH-0f-Scq" firstAttribute="top" secondItem="EMe-Ib-0Tr" secondAttribute="bottom" constant="8" id="KgA-GF-dqv"/>
+                            <constraint firstItem="U59-F8-ieb" firstAttribute="top" secondItem="EMe-Ib-0Tr" secondAttribute="bottom" constant="8" id="LtN-NL-8Sl"/>
+                            <constraint firstItem="t7v-9W-Wn2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RVG-xG-vlh"/>
+                            <constraint firstItem="0VP-L3-VOz" firstAttribute="top" secondItem="t7v-9W-Wn2" secondAttribute="bottom" constant="16" id="Ww6-Of-vzu"/>
+                            <constraint firstItem="tF7-aH-vEb" firstAttribute="leading" secondItem="OjQ-Yf-Iho" secondAttribute="trailing" constant="77" id="XsQ-6W-GaG"/>
+                            <constraint firstItem="tF7-aH-vEb" firstAttribute="top" secondItem="JTa-lP-80d" secondAttribute="bottom" constant="8" id="aPT-tR-OrI"/>
+                            <constraint firstItem="JTa-lP-80d" firstAttribute="top" secondItem="0VP-L3-VOz" secondAttribute="bottom" constant="11" id="bTc-Cf-nog"/>
+                            <constraint firstItem="JTa-lP-80d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="be2-io-nZj"/>
+                            <constraint firstItem="tF7-aH-vEb" firstAttribute="trailing" secondItem="JTa-lP-80d" secondAttribute="trailing" id="c6X-fL-MEX"/>
+                            <constraint firstItem="WOH-0f-Scq" firstAttribute="leading" secondItem="EMe-Ib-0Tr" secondAttribute="leading" id="cRJ-mx-3Tl"/>
+                            <constraint firstItem="EMe-Ib-0Tr" firstAttribute="leading" relation="lessThanOrEqual" secondItem="JTa-lP-80d" secondAttribute="trailing" constant="94" id="eZm-VA-IMY"/>
+                            <constraint firstItem="OjQ-Yf-Iho" firstAttribute="top" secondItem="JTa-lP-80d" secondAttribute="bottom" constant="8" id="fYF-AG-1rj"/>
+                            <constraint firstItem="t7v-9W-Wn2" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="191:736" id="nKK-x7-SYQ"/>
+                            <constraint firstItem="OjQ-Yf-Iho" firstAttribute="leading" secondItem="JTa-lP-80d" secondAttribute="leading" id="pYx-gl-fLX"/>
+                            <constraint firstItem="WOH-0f-Scq" firstAttribute="leading" relation="lessThanOrEqual" secondItem="tF7-aH-vEb" secondAttribute="trailing" constant="94" id="ufz-hu-1DH"/>
+                            <constraint firstItem="EMe-Ib-0Tr" firstAttribute="top" secondItem="0VP-L3-VOz" secondAttribute="bottom" constant="11" id="yBE-oQ-db8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="kylojedi" destination="WOH-0f-Scq" id="MhS-57-9ji"/>
+                        <outlet property="kylosith" destination="U59-F8-ieb" id="yM5-OW-nSw"/>
+                        <outlet property="rayjedi" destination="OjQ-Yf-Iho" id="tXS-vE-Jnd"/>
+                        <outlet property="raysith" destination="tF7-aH-vEb" id="vfW-KU-OBX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="115.94202898550725" y="116.57608695652175"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Kylo_Ren_profile" width="113" height="129"/>
+        <image name="Ray" width="41" height="41"/>
+        <image name="StarWarsTheLastJedi" width="106" height="60"/>
+    </resources>
 </document>
