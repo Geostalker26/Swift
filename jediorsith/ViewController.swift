@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     let blue = UIImage(named: "BlueLightSaber.png")
     var imageview1 :UIImageView!
     let red = UIImage(named: "RedLightSaber.png")
-    let choice = UILabel(frame: CGRect(x: 20, y: 350, width: 200, height: 25))
+    let choice = UILabel(frame: CGRect(x: 20, y: 350, width: 300, height: 30))
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.black
@@ -34,8 +34,8 @@ class ViewController: UIViewController {
         choice.center = CGPoint(x: 200, y: 580)
         choice.textAlignment = NSTextAlignment.center
         choice.text = "Ray chose the light side"
-        choice.textColor = UIColor(named: "starwarsyellow")
-        choice.font = choice.font.withSize(30)
+        choice.textColor = UIColor(named: "Star Wars Yellow")
+        choice.font = choice.font.withSize(27)
         self.view.addSubview(choice)
     }
     @IBAction func raybad(_ sender: Any) {
@@ -44,8 +44,8 @@ class ViewController: UIViewController {
         choice.center = CGPoint(x: 200, y: 580)
         choice.textAlignment = NSTextAlignment.center
         choice.text = "Ray chose the dark side"
-        choice.textColor = UIColor(named: "starwarsyellow")
-        choice.font = choice.font.withSize(30)
+        choice.textColor = UIColor(named: "Star Wars Yellow")
+        choice.font = choice.font.withSize(27)
         self.view.addSubview(choice)
     }
     @IBAction func kylogood(_ sender: Any) {
@@ -54,8 +54,8 @@ class ViewController: UIViewController {
         choice.center = CGPoint(x: 200, y: 580)
         choice.textAlignment = NSTextAlignment.center
         choice.text = "Kylo chose the light side"
-        choice.textColor = UIColor(named: "starwarsyellow")
-        choice.font = choice.font.withSize(30)
+        choice.textColor = UIColor(named: "Star Wars Yellow")
+        choice.font = choice.font.withSize(27)
         self.view.addSubview(choice)
     }
     @IBAction func kylobad(_ sender: Any) {
@@ -64,8 +64,8 @@ class ViewController: UIViewController {
         choice.center = CGPoint(x: 200, y: 580)
         choice.textAlignment = NSTextAlignment.center
         choice.text = "Kylo chose the dark side"
-        choice.textColor = UIColor(named: "starwarsyellow")
-        choice.font = choice.font.withSize(30)
+        choice.textColor = UIColor(named: "Star Wars Yellow")
+        choice.font = choice.font.withSize(27)
         self.view.addSubview(choice)
     }
     override func didReceiveMemoryWarning() {

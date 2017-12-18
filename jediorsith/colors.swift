@@ -9,5 +9,5 @@
 import UIKit
 
 extension UIColor{
-    let starwarsyellow = 0xFFDD00
+    
 }
